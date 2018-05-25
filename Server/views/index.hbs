@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+  function searchdate(){
+	var date=document.getElementById("datepicker").value;
+	if(date.length==0){
+		alert("please select the date");
+	}
+	else {
+		window.location='/searchbydate/'+"?date="+date;
+	}
+}
+
+ function searchname(){
+	var name=document.getElementById("name").value;
+	if(name.length==0){
+		alert("please select the name");
+	}
+	else {
+		window.location='/searchbyname/'+"?name="+name;
+	}
+}
+
+</script>
+<div style="margin-top: 15%">
+<h1 class="display-2" align="center" style="color: #AEB6BF">CMPE 297 Attendance Dashboard</h1>
+<h4 align="center" style="color: #AEB6BF">Get complete insight on attendance of the class</h4>
+<br>
+<br>
+<br>
+<div style="float: left; width: 25%;margin-left:20%">
+	<div class="form-group">
+		<h3 style="color: #AEB6BF">Search based on date</h3>
+		<div class="col-md-3 mb-6">
+      <label for="datepicker" style="color: #AEB6BF">Date</label>
+      <br>
+      <input id="datepicker" />
+    </div>	
+	</div>
+	<br>
+	<br>
+	<br>
+	<button class="btn btn-info" style="margin-left: 40px;color: black" onclick="searchdate()">Search</button>
+</div>
+<div style="float: left; width: 10%;margin-top:40px;color: #AEB6BF"><b>OR</b></div>
+
+<div style="float: left; width: 30%;margin-left: 60px">
+	<div class="form-group">
+		<h3 style="color: #AEB6BF">Search based on name</h3>
+		<div class="col-md-3 mb-6">
+      <label for="name" style="color: #AEB6BF">name</label>
+      <br>
+      <input type="text" name="name" placeholder="name" id="name">
+    </div>	
+	</div>
+	<br>
+	<br>
+	<br>
+	<button class="btn btn-info" style="margin-left: 40px;color: black" onclick="searchname()">Search</button>
+</div>
+</div>

@@ -1,0 +1,40 @@
+body {
+  font: 14px Apple Chancery, cursive;
+  background-image: url('https://pre00.deviantart.net/b044/th/pre/f/2012/020/0/2/__hexagon___wallpaper_by_cielaq1337-d4mzzik.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#students {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin-left:auto; 
+    margin-right:auto;
+    align-items: center;
+}
+
+#students td, #students th {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+#students tr:nth-child(even){background-color: #f2f2f2;text-align: center;font-size: 20px;p}
+
+#students tr:nth-child(odd){background-color: #ffffff;text-align: center;font-size: 20px;}
+
+
+#students tr:hover {background-color: #ddd;}
+
+#students th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #008080;
+    color: white;
+}
