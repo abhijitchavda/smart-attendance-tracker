@@ -3,8 +3,11 @@
 ### Download BlueZ
 
   Download BlueZ source code (wget www.kernel.org/pub/linux/bluetooth/bluez-5.43.tar.xz)
+  
   Extract the archive file (tar xvf bluez-5.43.tar.xz)
+  
   Run the sample code and make sure that it works (./bluez-5.43/test/example-advertisement)
+  
   Output should be like this
     $ ./bluez-5.43/test/example-advertisement
     GetAll
