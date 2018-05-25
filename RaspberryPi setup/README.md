@@ -17,7 +17,9 @@
 ###  Modify BLE Advertisement Example Code
 
   Copy the example code (cp ./bluez-5.43/test/example-advertisement ./example-altbeacon)
+  
   Open the file and look for TestAdvertisement class
+  
   Replace ‘__init__’ method:
   
     def __init__(self, bus, index):
@@ -47,6 +49,7 @@
   
   Run the code
     ./example-altbeacon
+    
   Output should be:
     GetAll
     returning props
