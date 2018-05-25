@@ -9,6 +9,7 @@
   Run the sample code and make sure that it works (./bluez-5.43/test/example-advertisement)
   
   Output should be like this
+  
     $ ./bluez-5.43/test/example-advertisement
     GetAll
     returning props
@@ -48,9 +49,11 @@
 ### Test
   
   Run the code
+  
     ./example-altbeacon
     
   Output should be:
+  
     GetAll
     returning props
     Advertisement registered
